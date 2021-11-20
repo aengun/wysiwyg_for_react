@@ -9,10 +9,7 @@ const ComEditor = () => {
   const HTML = current.getHTML();
 
   const onClickButton = () => {
-    // const current: any = editorRef.current.getInstance();
-    // const markdown = current.getMarkdown();
     console.log(markdown);
-    // const HTML = current.getHTML();
     console.log(HTML);
   };
 
