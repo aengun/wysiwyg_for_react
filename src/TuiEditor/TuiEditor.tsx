@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { Editor } from "@toast-ui/react-editor";
 import "@toast-ui/editor/dist/toastui-editor.css";
 
+// https://github.com/nhn/tui.file-uploader
+
 const TuiEditor = () => {
   const editorRef: any = useRef(null);
 
@@ -22,10 +24,10 @@ const TuiEditor = () => {
         previewStyle="vertical"
         height="600px"
         initialEditType="wysiwyg"
-        useCommandShortcut={false}
         usageStatistics={false}
         ref={editorRef}
         initialValue={testValue}
+        language={"ko-Kr"}
       />
       <button onClick={onClickButton}>CLICK!!</button>
     </>
