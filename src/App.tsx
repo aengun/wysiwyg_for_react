@@ -1,14 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Editor } from "@toast-ui/react-editor";
-import ComEditor from "./editor/ComEditor";
+import { Route, Routes } from "react-router";
+import TuiEditor from "./TuiEditor/TuiEditor";
+import DraftEditor from "./DraftEditor/DraftEditor";
+import QuillEditor from "./QuillEditor/QuillEditor";
 
 function App() {
   return (
-    <div>
-      <ComEditor />
-    </div>
+    <Routes>
+      <Route path="/tui" element={<TuiEditor />} />
+      <Route path="/draft" element={<DraftEditor />} />
+      <Route path="/quill" element={<QuillEditor />} />
+    </Routes>
   );
 }
 
