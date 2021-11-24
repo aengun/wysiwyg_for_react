@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Editor } from "@toast-ui/react-editor";
 import "@toast-ui/editor/dist/toastui-editor.css";
+// import "@toast-ui/react-editor/dist/i18n/ko-kr.js";
 
 // https://github.com/nhn/tui.file-uploader
 
@@ -17,6 +18,12 @@ const TuiEditor = () => {
     console.log(HTML);
   };
 
+  const uploadImage = (blob: Blob) => {
+    console.log(blob);
+
+    return "a";
+  };
+
   return (
     <>
       <Editor
@@ -28,6 +35,13 @@ const TuiEditor = () => {
         ref={editorRef}
         initialValue={testValue}
         language={"ko-Kr"}
+        hooks={{
+          addImageBlobHook: (blob, callback) => {
+            const uploadedImageURL = uploadImage(blob);
+            callback(uploadedImageURL, "alt text");
+            return false;
+          },
+        }}
       />
       <button onClick={onClickButton}>CLICK!!</button>
     </>
