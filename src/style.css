@@ -1,0 +1,109 @@
+/* Header */
+.orderDiv .m-header {
+  position: relative;
+  height: 70px;
+}
+.orderDiv .m-header__back {
+  flex: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  font-size: 0;
+}
+
+.orderDiv .m-header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 4px;
+  font-size: 17px;
+  color: #222;
+  font-family: "Noto Medium";
+}
+
+.orderDiv .m-container {
+  padding: 0 18px 50px 18px;
+}
+
+/* .orderDiv .m-header__back a {
+  display: block;
+  height: 100%;
+  background: url("../../../images/order/header_icon_back.png") no-repeat center
+    center;
+  background-size: 20px 20px;
+} */
+.orderDiv .m-popup__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: url("./images/closed.jpeg") no-repeat center center;
+  background-size: 20px 20px;
+  font-size: 0;
+}
+
+.orderDiv .m-popup {
+  z-index: 11;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+}
+.orderDiv .m-popup__header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+.orderDiv .m-popup_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 4px;
+  font-size: 17px;
+  color: #212121;
+  font-family: "Noto Medium";
+}
+.orderDiv .m-popup__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 53px;
+  height: 100%;
+  background: url("./images/closed.jpeg") no-repeat center center;
+  background-size: 20px 20px;
+  font-size: 0;
+}
+.orderDiv .m-popup__contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 70px 18px 50px 18px;
+}
+.orderDiv .m-popup__content {
+  flex: 1;
+  overflow: auto;
+}
+.orderDiv .m-popup__func {
+  flex: none;
+  margin-top: 30px;
+}
+.orderDiv .m-popup__func select {
+  width: 100%;
+  height: 43px;
+  padding: 2px 45px 0 13px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background: url("./images/closed.jpeg") no-repeat right 15px center;
+  background-size: 15px 15px;
+  color: #212121;
+}
